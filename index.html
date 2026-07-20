@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sakthi Mayandi | QA/QC Welding Inspector</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: #f0f9ff;
+        color: #1e293b;
+        line-height: 1.7;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1050px;
+        margin: auto;
+        padding: 35px 20px;
+    }
+
+    /* Header */
+
+    header {
+        background: linear-gradient(135deg, #dff6ff, #bae6fd);
+        text-align: center;
+        padding: 70px 25px;
+        border-radius: 24px;
+        margin-bottom: 28px;
+        border: 1px solid #bae6fd;
+        box-shadow: 0 10px 30px rgba(14, 165, 233, 0.12);
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: #0f3d5e;
+        letter-spacing: -1px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #0369a1;
+        margin-top: 8px;
+    }
+
+    /* Button */
+
+    .btn {
+        display: inline-block;
+        margin-top: 25px;
+        padding: 12px 28px;
+        background: #0284c7;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #0369a1;
+        transform: translateY(-2px);
+        box-shadow: 0 8px 18px rgba(2, 132, 199, 0.25);
+    }
+
+    /* Sections */
+
+    section {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 18px;
+        margin-bottom: 22px;
+        border: 1px solid #e0f2fe;
+        box-shadow: 0 8px 25px rgba(15, 23, 42, 0.05);
+    }
+
+    h2 {
+        color: #0369a1;
+        font-size: 1.35rem;
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #bae6fd;
+        font-weight: 700;
+    }
+
+    section p {
+        color: #475569;
+        font-size: 0.98rem;
+    }
+
+    /* Skills */
+
+    .skills ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 12px;
+        list-style: none;
+    }
+
+    .skills li {
+        background: #f0f9ff;
+        padding: 13px 16px;
+        border-radius: 10px;
+        color: #334155;
+        font-size: 0.92rem;
+        font-weight: 500;
+        border-left: 4px solid #38bdf8;
+        transition: 0.3s ease;
+    }
+
+    .skills li:hover {
+        background: #e0f2fe;
+        transform: translateX(4px);
+    }
+
+    /* Projects */
+
+    .project {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+    }
+
+    .project:last-child {
+        margin-bottom: 0;
+    }
+
+    .project h3 {
+        color: #075985;
+        margin-bottom: 6px;
+        font-size: 1.05rem;
+    }
+
+    /* Education */
+
+    .education-text {
+        color: #334155;
+        font-size: 1rem;
+    }
+
+    .education-text b {
+        color: #075985;
+    }
+
+    /* Contact */
+
+    .contact p {
+        margin-bottom: 10px;
+    }
+
+    .contact a {
+        color: #0284c7;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .contact a:hover {
+        text-decoration: underline;
+    }
+
+    /* Footer */
+
+    footer {
+        text-align: center;
+        padding: 25px 10px 10px;
+        color: #64748b;
+        font-size: 0.85rem;
+    }
+
+    /* Responsive */
+
+    @media (max-width: 600px) {
+
+        .container {
+            padding: 20px 14px;
+        }
+
+        header {
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        section {
+            padding: 22px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+    }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Hello, I'm Sakthi Mayandi</h1>
+
+        <p>QA/QC Welding Inspector</p>
+
+        <button class="btn" onclick="scrollToSection('contact')">
+            Hire Me
+        </button>
+
+    </header>
+
+
+    <!-- About -->
+
+    <section>
+
+        <h2>About Me</h2>
+
+        <p>
+            I am a passionate Welding Inspector with strong knowledge of welding procedures,
+            inspection techniques, and quality control. I enjoy ensuring that welds meet
+            international codes and safety standards for oil, gas, and structural projects.
+        </p>
+
+    </section>
+
+
+    <!-- Skills -->
+
+    <section class="skills">
+
+        <h2>Professional Skills</h2>
+
+        <ul>
+
+            <li>Material Inspection</li>
+
+            <li>WPS - Welding Procedure Specification</li>
+
+            <li>PQR - Procedure Qualification Record</li>
+
+            <li>Welding Inspection</li>
+
+            <li>Visual Inspection</li>
+
+            <li>Welding Processes - SMAW, GTAW, FCAW</li>
+
+            <li>Piping & Structural Inspection</li>
+
+            <li>Metallurgy</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- Projects -->
+
+    <section>
+
+        <h2>Projects</h2>
+
+        <div class="project">
+
+            <h3>ADNOC OFFSHORE</h3>
+
+            <p>
+                1) EPC Works For Lower Zakum Habshan Upper Recovery and Lekhwair +20MBD Project.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>E-Commerce Website</h3>
+
+            <p>
+                Online shopping website with user login, product cart, and payment features.
+                Built with HTML, CSS and JavaScript.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education -->
+
+    <section>
+
+        <h2>Education</h2>
+
+        <p class="education-text">
+
+            <b>Diploma in Mechanical Engineering</b>
+            <br>
+
+            MSPVL Polytechnic College, Tamil Nadu
+
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            <b>Email:</b>
+            <a href="mailto:sakthimayandi21@gmail.com">
+                sakthimayandi21@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <b>Phone:</b>
+            <a href="tel:+918220623032">
+                +91 82206 23032
+            </a>
+        </p>
+
+        <p>
+            <b>GitHub:</b>
+            <a href="https://github.com/sakthisocial21-lab" target="_blank">
+                github.com/sakthisocial21-lab
+            </a>
+        </p>
+
+        <p>
+            <b>Portfolio:</b>
+            <a href="https://sakthisocial21-lab.github.io/sakthi-portfolio/" target="_blank">
+                sakthi-portfolio
+            </a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Sakthi Mayandi. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</div>
+
+
+<script>
+
+    function scrollToSection(id) {
+
+        document.getElementById(id).scrollIntoView({
+            behavior: 'smooth'
+        });
+
+    }
+
+</script>
+
+</body>
+</html>
